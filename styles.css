@@ -2,4 +2,49 @@
     width: 100%;
     object-fit: cover;
     aspect-ratio: 1 / 1;
- }
+}
+
+.cover{
+    width: 100%;
+}
+
+#header{
+   background-color: #F8F9FA;
+}
+
+ 
+.noto-sans-picture-title {
+   font-family: "Noto Sans", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 500;
+   font-style: normal;
+   font-variation-settings:
+     "wdth" 100;
+}
+
+.noto-sans-picture-date {
+   font-family: "Noto Sans", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 450;
+   font-style: normal;
+   font-variation-settings:
+     "wdth" 100;
+}
+
+.noto-sans-picture-likes {
+   font-family: "Noto Sans", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 700;
+   font-style: normal;
+   font-variation-settings:
+     "wdth" 100;
+}
+
+.noto-sans-picture-caption {
+   font-family: "Noto Sans", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 450;
+   font-style: normal;
+   font-variation-settings:
+     "wdth" 100;
+}
