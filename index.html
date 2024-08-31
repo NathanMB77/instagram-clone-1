@@ -1,27 +1,31 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wdth,wght@62.5..100,100..900&display=swap" rel="stylesheet">
-   
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wdth,wght@62.5..100,100..900&display=swap"
+        rel="stylesheet">
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet">
     <title>Instagram post feed</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container-fluid">
         <div id="header" class="row align-items-center justify-content-between py-3">
             <div class="col-4">
                 <div class="row">
                     <div class="col-1">
-                        
+
                     </div>
                     <div class="col-8">
                         <img src="images/instagram-logo.png" alt="">
@@ -32,45 +36,56 @@
                 <div class="row">
                     <div class="col-10 d-flex justify-content-end">
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-success border-0" data-bs-toggle="modal" data-bs-target="#modal1">
+                        <button type="button" class="btn btn-success border-0" data-bs-toggle="modal"
+                            data-bs-target="#modal1">
                             Create a new post
                         </button>
-                        
                         <!-- Modal -->
-                        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
                                         <div class="row">
                                             <div class="mb-3">
-                                                <label for="exampleFormControlTextarea1" class="form-label">Caption:</label>
-                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Add the caption of your post here"></textarea>
+                                                <label for="exampleFormControlTextarea1"
+                                                    class="form-label">Caption:</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"
+                                                    placeholder="Add the caption of your post here"></textarea>
                                             </div>
                                         </div>
                                         <div class="row gap-2">
                                             <div class="col-1">
                                                 <button type="button" class="btn btn-light border">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
-                                                        <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
-                                                        <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0"/>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-camera-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                                        <path
+                                                            d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0" />
                                                     </svg>
                                                 </button>
                                             </div>
                                             <div class="col-1">
                                                 <button type="button" class="btn btn-light border">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                                                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-geo-alt-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
                                                     </svg>
                                                 </button>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
                                         <button type="button" class="btn btn-success">Publish</button>
                                     </div>
                                 </div>
@@ -80,15 +95,19 @@
                     <div class="col-2">
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
-                                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
                                 </svg>
                             </button>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Home</a></li>
                                 <li><a class="dropdown-item" href="#">Accesibility</a></li>
                                 <li><a class="dropdown-item" href="#">Priacy and Data</a></li>
-                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
                                 <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
                             </ul>
                         </div>
@@ -97,25 +116,33 @@
             </div>
         </div>
         <div id="body" class="row">
-            <div id="gallery-navtab" class="row"> 
+            <div id="gallery-navtab" class="row">
                 <nav>
                     <div class="nav nav-tabs justify-content-center border-0" id="nav-tab" role="tablist">
-                        <button class="nav-link active border-0" id="nav-3xgrid-tab" data-bs-toggle="tab" data-bs-target="#nav-3xgrid" type="button" role="tab" aria-controls="nav-3xgrid" aria-selected="true">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3" viewBox="0 0 16 16">
-                            <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5zM1.5 1a.5.5 0 0 0-.5.5V5h4V1zM5 6H1v4h4zm1 4h4V6H6zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5zm1 0v4h4v-4zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11zm0-1h4V6h-4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11zm-1 0V1H6v4z"/>
-                        </svg>
+                        <button class="nav-link active border-0" id="nav-3xgrid-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-3xgrid" type="button" role="tab" aria-controls="nav-3xgrid"
+                            aria-selected="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-grid-3x3" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5zM1.5 1a.5.5 0 0 0-.5.5V5h4V1zM5 6H1v4h4zm1 4h4V6H6zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5zm1 0v4h4v-4zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11zm0-1h4V6h-4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11zm-1 0V1H6v4z" />
+                            </svg>
                         </button>
-                        <button class="nav-link border-0" id="nav-1xgrid-tab" data-bs-toggle="tab" data-bs-target="#nav-1xgrid" type="button" role="tab" aria-controls="nav-1xgrid" aria-selected="false">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16">
-                            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"/>
-                        </svg>
+                        <button class="nav-link border-0" id="nav-1xgrid-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-1xgrid" type="button" role="tab" aria-controls="nav-1xgrid"
+                            aria-selected="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-square-fill" viewBox="0 0 16 16">
+                                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" />
+                            </svg>
                         </button>
                     </div>
                 </nav>
                 <div class="tab-content" id="gallery-content">
-                    <div class="tab-pane fade show active" id="nav-3xgrid" role="tabpanel" aria-labelledby="nav-3xgrid-tab">
+                    <div class="tab-pane fade show active" id="nav-3xgrid" role="tabpanel"
+                        aria-labelledby="nav-3xgrid-tab">
 
-                        
+
                         <div class="container-fluid">
                             <div class="row row-cols-3 mt-2 g-2">
                                 <div class="col">
@@ -130,7 +157,7 @@
                                 </div>
                                 <div class="col">
                                     <div class="ratio ratio-1x1">
-                                        <img class="img-fluid square" src="images/insta-3.png" alt="" >
+                                        <img class="img-fluid square" src="images/insta-3.png" alt="">
                                     </div>
                                 </div>
                                 <div class="col">
@@ -181,12 +208,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                    <img class="cover" src="images/insta-1.png" alt="">
+                                <img class="cover" src="images/insta-1.png" alt="">
                                 <div class="row">
                                     <div class="row">
                                         <div class="ms-2 mt-2">
                                             <p class="noto-sans-picture-likes m-0">204 Likes</p>
-                                            <p class="noto-sans-picture-caption mb-4">This is an example of a very good photo that you can post on instagram</p>
+                                            <p class="noto-sans-picture-caption mb-4">This is an example of a very good
+                                                photo that you can post on instagram</p>
                                         </div>
                                     </div>
                                 </div>
@@ -206,12 +234,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                    <img class="cover" src="images/insta-3.png" alt="">
+                                <img class="cover" src="images/insta-3.png" alt="">
                                 <div class="row">
                                     <div class="row">
                                         <div class="ms-2 mt-2">
                                             <p class="noto-sans-picture-likes m-0">26985 Likes</p>
-                                            <p class="noto-sans-picture-caption mb-4">This is an example of a very good photo that you can post on instagram</p>
+                                            <p class="noto-sans-picture-caption mb-4">This is an example of a very good
+                                                photo that you can post on instagram</p>
                                         </div>
                                     </div>
                                 </div>
@@ -231,22 +260,26 @@
                                         </div>
                                     </div>
                                 </div>
-                                    <img class="cover" src="images/insta-6.png" alt="">
+                                <img class="cover" src="images/insta-6.png" alt="">
                                 <div class="row">
                                     <div class="row">
                                         <div class="ms-2 mt-2">
                                             <p class="noto-sans-picture-likes m-0">204 Likes</p>
-                                            <p class="noto-sans-picture-caption mb-4">This is an example of a very good photo that you can post on instagram</p>
+                                            <p class="noto-sans-picture-caption mb-4">This is an example of a very good
+                                                photo that you can post on instagram</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
